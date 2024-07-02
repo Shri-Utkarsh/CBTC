@@ -1,0 +1,58 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-family: "lato",sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.pimg1{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/591/844/1024/spider-man-spider-video-games-superhero-wallpaper-preview.jpg);
+    min-height: 100%;  
+}
+.pimg2{
+    background-image: url(https://i.pinimg.com/originals/71/b2/2a/71b22a6563362653dbfb52dbb667ce42.jpg);
+    min-height: 400px;  
+}
+.pimg3{
+    background-image: url(https://wallpapercave.com/wp/wp2028630.jpg);
+    min-height: 400px;  
+}
+
+.pimg1 , .pimg2,  .pimg3{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: wheat;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.textBg{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+.section_1 {
+    padding: 50px 80px;
+    text-align: center;
+}
+.about{
+    background-color: #282e34;
+    color: #ddd;
+}
+@media (max-width: 440px) {
+    .ptext{
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+}

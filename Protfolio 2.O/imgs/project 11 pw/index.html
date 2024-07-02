@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW.com</title> 
+    <!-- side logo -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!-- CSS touch -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- CSS style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="banner"></div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">College Reviews</a>
+        <a href="#">Courses</a>
+        <a href="#">Study Materials</a>
+        <a href="#" class="fle-login-right">Login/SignUp</a>
+    </nav>
+    <main>
+        <section>
+            <h2><span>Videos</span></h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><video src="bird.mp4" width="250" height="250" poster="data:image/jpeg;base64,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"  controls></video></div>
+                <div class="carousel-cell"><video src="bird.mp4" width="250" height="250" poster="https://www.pw.live/version14/assets/img/website-banner-12.png" controls></video></div>
+                <div class="carousel-cell"><video src="bird.mp4" width="250" height="250" poster="https://i0.wp.com/indiaeducationdiary.in/wp-content/uploads/2022/08/IMG_2454.jpg?fit=1125%2C658&ssl=1" controls></video></div>
+                <div class="carousel-cell"><video src="bird.mp4" width="250" height="250" poster="https://i.ytimg.com/vi/6mXO3Dh9f2Y/sddefault.jpg" controls></video></div>
+                <div class="carousel-cell"><video src="bird.mp4" width="250" height="250" poster="https://pbs.twimg.com/media/FW5qqtaWQAAJv_A.jpg" controls></video></div>
+            </div>
+            
+            
+            
+        </section>
+        <section>
+            
+            <h2> <br> <span> FOUNDER AND CO-FOUNDER OF PW</span></h2>
+            <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell"><img src="https://assets.entrepreneur.com/content/3x2/2000/1654862474-Myproject328.jpg" width="300" height="250px">
+                    <h3>Founder: Alakh Pandey</h3></div>
+                <div class="carousel-cell"><img src="prateek sir.png" width="250" height="300px"></video><h3>Co-founder: Prateek Maheshwari </h3></div>
+            </div>
+            
+            
+            <h6>Follow us on on </h6>
+            <a href="https://instagram.com/utkarshsrivastava1422?igshid=ZDdkNTZiNTM=" target="_blank" ><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" width="60px" height="60px"></a>
+            
+            <a href="https://instagram.com/utkarshsrivastava1422?igshid=ZDdkNTZiNTM=" target="_blank" ><img src="https://cdn.pixabay.com/photo/2021/05/22/11/38/yt-6273367_960_720.png" width="70" height="60"></a>
+            
+            <a href="https://instagram.com/utkarshsrivastava1422?igshid=ZDdkNTZiNTM=" target="_blank" ><img src="https://static.vecteezy.com/system/resources/previews/002/534/045/original/social-media-twitter-logo-blue-isolated-free-vector.jpg" width="70" height="65"></a>
+        </section>
+
+    </main>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact us</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">&copy;</a>
+        
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

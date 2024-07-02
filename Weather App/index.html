@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Fontawesome link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/cc30673c3e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- Style.css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container morph active">
+        <!-- Input container -->
+        <div class="search-box morph">
+            <i class="fa-solid fa-location-dot"></i>
+            <input class="morph active" type="text" placeholder="Enter Location">
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p id="demo"></p>
+        <!-- Weather box container -->
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <img src="assets/cloud.png" alt="">
+                    <p class="temperature">0<span>C</span></p>
+                    <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+        </div>
+        <!-- Weather details container -->
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <div class="info-humidity"><span>0 %</span></div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <div class="info-wind"><span>0 km/hr</span></div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        <!-- Not found city -->
+         <div class="not-found">
+            <div class="box">
+                <img src="assets/404.png" alt="">
+                <p>Location Not Found !</p>
+            </div>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initialscale=1.0" />
+  <title>Protfolio</title>
+  <!-- Font awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/cc30673c3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/appletouch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <!-- Style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Protfolio <img src="logo name.png" /></a>
+    <nav class="navbar" id="sidemenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#service">Services</a>
+      <a href="#portfolio">Protfolio</a>
+      <a href="#contact">Contact</a>
+      <i class="ri-close-line" onclick="closemenu()" id="nav_bar_icon"></i>
+    </nav>
+    <i class="ri-menu-fill" onclick="openmenu()" id="nav_bar_icon"></i>
+  </header>
+  <!-- Home section -->
+  <section class="home" id="home">
+    <div class="home-container">
+      <h3>Hello, I'm</h3>
+      <h1>Utkarsh Srivastava</h1>
+      <h3><span>Web Developer</span></h3>
+      <p>
+        A passionate web developer with a strong foundation in front-end technologies. <br>
+        I specialize in creating dynamic and responsive websites that
+        provide a seamless user experience.
+      </p>
+
+      <div class="social-media">
+        <a href="https://www.instagram.com/utkarshsrivastava1422/?igshid=ZDdkNTZiNTM%3D" target="_blank"><i
+            class="ri-instagram-line"></i></a>
+        <a href="https://www.linkedin.com/in/utkarsh-srivastava-1749b828b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"><i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/Shri-Utkarsh" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:utkarshsrivastava1422@gmail.com" target="_blank">
+          <i class="fa-regular fa-envelope"></i></a>
+      </div>
+      <a href="Utkarsh_Resume.pdf" download><button class="btn">Download CV</button></a>
+    </div>
+    <div class="home-img">
+      <img src="Profile_img.jpg" alt="" />
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>
+        As a web developer, I am eager to secure a position in the dynamic field of web
+        development. My goal is to apply my extensive knowledge and technical skills to real-world projects,
+        contributing to innovative solutions and continuous improvement. I am passionate about learning new
+        technologies, enhancing my development expertise, and collaborating with a forward-thinking team to create
+        impactful digital experiences. <br><br>
+        Collaboration is at the heart of my approach to web development. I am eager to work alongside a forward-thinking
+        team where collective creativity and knowledge-sharing drive the creation of impactful digital experiences. I
+        value open communication, teamwork, and the opportunity to contribute my skills in a collaborative environment
+        that fosters growth and mutual learning.
+      </p>
+      <h3>My skills</h3>
+      <p>HTML, CSS, JavaScript, Java, C++.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </section>
+  <!-- Service section -->
+  <section class="service" id="service">
+    <h2>Our <span>Services</span></h2>
+    <div class="service-container">
+      <div class="services-box">
+        <i class="ri-code-s-slash-line"></i>
+        <h3>Web Development</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+          sapiente. Dicta voluptates consequuntur eaque impedit.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="services-box">
+        <i class="ri-paint-brush-fill"></i>
+        <h3>Graphic Design</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+          sapiente. Dicta voluptates consequuntur eaque impedit.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+      <div class="services-box">
+        <i class="ri-android-line"></i>
+        <h3>App Development</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi,
+          sapiente. Dicta voluptates consequuntur eaque impedit.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+
+      <div class="portfolio-box">
+        <img src="imgs/Todo img.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Calculator</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/todo/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="imgs/Scientific Calculator img.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Calculator</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/Scientific Calculator/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="imgs/Weather app img.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Calculator</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/Weather App/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="imgs/1.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Calculator</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/Calculator/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/2.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>QR Generator</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/QR/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="imgs/4.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Login Page</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 7 login/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="imgs/5.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>YT Clone</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/Youtube clone/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/6.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>PW For Fun</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 11 pw/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+     
+      <div class="portfolio-box">
+        <img src="imgs/8.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Restaurent website</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/Project 2 restorent/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/9.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Parallax</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 5 parallax/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/10.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Biography page</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 8 biography/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/11.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Gaming Page</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 10 gaming/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/12.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Job Application Form</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 6 job applicaton/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/13.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Contact Form</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 9 contact/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="imgs/14.png" alt="" />
+        <div class="portfolio-layer">
+          <h4>Payment Form</h4>
+          <p>Design and developed by Utkarsh Srivastava</p>
+          <a href="imgs/project 4 payment/index.html"><i class="ri-link-m"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form name="submit-to-google-sheet">
+      <div class="input-box">
+        <input type="text" name="Full_Name" placeholder="Full Name" required />
+        <input type="email" name="Email" placeholder="Email" required />
+      </div>
+      <div class="input-box">
+        <input type="number" name="Mobile_Number" placeholder="Mobile Number" required />
+      </div>
+      <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="btn" />
+      <span id="msg"></span>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Utkarsh | All Rights Reserved</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="ri-arrow-up-line"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- java script -->
+
+  <script>
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemen.style.right = "0";
+    }
+    function closemenu() {
+      sidemen.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyAWe69xoFvkM2Xr50ryaCY_XYOQiXmlCR5qyRieTuENrggJs2IYyLyJ-6nFp0OfUXv/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully!";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+
+    ScrollReveal({
+      reset: true,
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    ScrollReveal().reveal('.home-container, .heading, .service ', { origin: 'top' });
+    ScrollReveal().reveal('.home-img, .service-container, .portfolio-box, .contact form ', { origin: 'bottom' });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator By Utkarsh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Enter text or URL</p>
+        <input type="text" placeholder="Text or URL" id="QR_text">
+
+        <div id="imgBox">
+            <img src="" id="QR_img">
+        </div>
+        <button onclick="generateQR()">Generate QR code</button>
+    </div>
+
+ <script>
+   
+    let imgBox = document.getElementById("imgBox");
+    let QR_img = document.getElementById("QR_img");
+    let QR_text = document.getElementById("QR_text");
+    
+    // if(QR_text.value.lenght > 0){
+        function generateQR(){
+        QR_img.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + QR_text.value;
+        imgBox.classList.add("show-img");
+       }     
+    // }
+    // else{
+    //     QR_text.classList.add('error');
+    //     setTimeout(()=>{
+    //         QR_text.classList.remove('error');
+    //     },1000);
+    // }
+   
+1211
+ </script>   
+
+</body>
+</html>

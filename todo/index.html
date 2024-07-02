@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do app</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cc30673c3e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="to-doGIF.gif" alt=""></h2>
+            <div class="type-box">
+                <input type="text" id="input-box" placeholder="Add Your Task">
+                <button onclick="addTask()">Add</button>
+            </div>
+            
+            <div id="Task-list-container">
+                <h3>Incomplete Tasks</h3>
+                <ul id="incompleteTasks" class="task-list">
+                    <!-- Incomplete tasks will be added here -->
+                </ul>
+                
+                <h3>Completed Tasks</h3>
+                <ul id="completedTasks" class="task-list">
+                    <!-- Completed tasks will be added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
